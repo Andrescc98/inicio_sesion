@@ -1,15 +1,15 @@
 <?php
 
     class conexion{
-        private $usuario="root";
-        private $contrasena="";
+        private $user="root";
+        private $pass="";
         private $mbd;
 
         //creamos un constructor que conecte con la base de datos
         public function __construct(){
             //probamos conectar
             try{
-                $this->mbd=new pdo("mysql:host=localhost;dbname=sesion", $this->usuario, $this->contrasena);
+                $this->mbd=new PDO("mysql:host=localhost;dbname=sesion", $this->user, $this->pass);
                 
             }
             //en caso de que no funcione mostrara "conexion fallida"
@@ -30,6 +30,6 @@
         }
     }
 
-    $conexion=new conexion();
+
     
 ?>
