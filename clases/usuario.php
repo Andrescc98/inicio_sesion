@@ -1,11 +1,11 @@
 <?php
 
-    include_once 'conexion.php';
+    include_once ('conexion.php');
 
-    $conexion=new conexion();
+    $conexion=new Conexion();
     $mbd=$conexion->getConexion();
     
-    class usuario{
+    class Usuario{
         private $pdo;
         private $nombreUsuario;
         private $contrasena;
@@ -50,7 +50,11 @@
                 
             }
         }
+
+        public function __destruct(){
+            $this->pdo=null;
+        }
     }  
 
-    $usuario=new usuario($mbd);
+    $usuario=new Usuario($mbd);
 ?>

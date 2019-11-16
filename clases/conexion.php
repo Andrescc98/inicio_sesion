@@ -1,6 +1,6 @@
 <?php
 
-    class conexion{
+    class Conexion{
         private $user="root";
         private $pass="";
         private $mbd;

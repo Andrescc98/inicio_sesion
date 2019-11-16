@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="estilos/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos/fontawesome-free-5.9.0-web/css/all.css">
+    <title>INICIO DE SESION</title>
 </head>
 <body style="font-family: Roboto">
     <div class="container-fluid">
@@ -14,9 +14,9 @@
             <div class="col-4"></div>
             <div class="col-4 card border-0 bg-transparent shadow mt-5">
                 <div class="card-body">
-                    <h3 class="text-center">Registro</h3>
+                    <h3 class="text-center">Inicio de sesion</h3>
 
-                    <form action="registrar.php" method="POST" class="mt-3">
+                    <form action="instancias/sesion.php" method="POST" class="mt-3">
 
                         <div class="form-group">
                             <label for="nombreUsuario">Nombre de Usuario:</label>
@@ -29,7 +29,7 @@
                         </div>
 
                         <div class="text-center">
-                            <button type="submit" class="mt-3 btn btn-info border-0 rounded-0 shadow-lg">Registrar</button>
+                            <button type="submit" class="mt-3 btn btn-info border-0 rounded-0 shadow-lg">Entrar</button>
                         </div>
                     </form>
                 </div>
@@ -38,6 +38,6 @@
             <div class="col-4"></div>
         </div>
     </div>
-    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="estilos/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
