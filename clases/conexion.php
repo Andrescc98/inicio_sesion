@@ -2,7 +2,7 @@
 
     class Conexion{
         private $user="root";
-        private $pass="";
+        private $pass="(C0r0Nad0)";
         private $mbd;
 
         //creamos un constructor que conecte con la base de datos

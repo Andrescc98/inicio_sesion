@@ -1,3 +1,13 @@
+<?php
+    session_start();
+if (isset($_SESSION['user'])) {
+    header('location:/inicio_sesion/vistas/inicio.php');
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,17 +16,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="estilos/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="estilos/fontawesome-free-5.9.0-web/css/all.css">
+    <link rel="stylesheet" href="estilos/login.css">
     <title>INICIO DE SESION</title>
 </head>
-<body style="font-family: Roboto">
+<body >
     <div class="container-fluid">
         <div class="row">
             <div class="col-4"></div>
-            <div class="col-4 card border-0 bg-transparent shadow mt-5">
+            <div class="col-4 card  shadow-none mt-5">
                 <div class="card-body">
-                    <h3 class="text-center">Inicio de sesion</h3>
+                    <h3 class="text-center mt-3 mb-5">Inicio de sesion</h3>
 
-                    <form action="instancias/sesion.php" method="POST" class="mt-3">
+                    <form action="instancias/sesion.php" method="POST">
 
                         <div class="form-group">
                             <label for="nombreUsuario">Nombre de Usuario:</label>
@@ -28,8 +39,8 @@
                             <input type="password" class="form-control" name="contrasena" id="contrasena">
                         </div>
 
-                        <div class="text-center">
-                            <button type="submit" class="mt-3 btn btn-info border-0 rounded-0 shadow-lg">Entrar</button>
+                        <div class="text-center my-3">
+                            <button type="submit" class="btn btn-info btn-block">Entrar</button>
                         </div>
                     </form>
                 </div>

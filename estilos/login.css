@@ -1,0 +1,15 @@
+body{
+    height:100%;
+    background-image:url("../media/img/pier_aurora_landscape.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center center; 
+    backdrop-filter: blur(7px);
+    
+
+}
+html{
+    height:100%;
+
+}
